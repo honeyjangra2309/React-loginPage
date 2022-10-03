@@ -15,12 +15,12 @@ const Navbar = ({theme,settheme}) => {
     }
   }
   return (
-    <nav className={` w-[50vw] flex flex-row justify-between items-center flex-wrap navbar`}>
-         <div className={`${styles.flexStart} items-center mx-5 mt-12`}>
+    <nav className={` md:w-[50vw] w-[100vw] flex flex-row justify-between items-center flex-wrap navbar`}>
+         <div className={`${styles.flexStart} items-center mx-5 mt-6`}>
             {theme=="black" ? <img src={logo} alt="logo" className='w-[24px] h-[24px] mr-2' /> : <img src={logoWhite} alt="logo" className='w-[24px] h-[24px] mr-2'/>}
             <h2 className={`text-[24px] ${theme=="black"? "text-myWhite": "text-myBlack"} cursor-pointer font-raleway`}>nameless</h2>
          </div>
-         <label id="switch" className="switch mt-12 mx-12">
+         <label id="switch" className="switch mt-10 mx-12">
             <input type="checkbox" onChange={changeTheme} id="slider" />
             <span className="slider round"></span>
         </label>

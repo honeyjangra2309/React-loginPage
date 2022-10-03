@@ -9,7 +9,7 @@ function App() {
   
   return (
     <div className={`${theme=="black"? "bg-primary" : "bg-myWhite" } w-full overflow-hidden flex flex-row justify-between items-center max-h-[100vh]`}>
-      <div className='w-full flex flex-col justify-start items-start'>
+      <div className='w-full flex flex-col justify-start items-start h-[100vh]'>
       <Navbar theme={theme} settheme={settheme} />
       <Content theme={theme} />
       </div>
